@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PERSONALITY LAB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="particles" id="particles"></div>
+
+  <header>
+    <div class="logo">PERSONALITY <span>LAB</span></div>
+    <div class="live"><i></i> TAHLIL TIZIMI FAOL</div>
+  </header>
+
+  <main>
+    <section id="welcome" class="screen active">
+      <div class="orb"><div class="orb-inner">PL</div></div>
+      <div class="eyebrow">SUN’IY XARAKTER LABORATORIYASI</div>
+      <h1>O‘ZINGNI <span>KASHF ET</span></h1>
+      <p class="intro">
+        Sening ichki dunyong qanday ishlaydi? Qanday qaror qabul qilasan?
+        Qanday fikrlaysan? Buni birgalikda aniqlaymiz.
+      </p>
+
+      <div class="feature-row">
+        <div><b>15</b><span>NOODATIY SAVOL</span></div>
+        <div><b>∞</b><span>IMKONIYATLAR</span></div>
+        <div><b>01</b><span>SENING OBRAZING</span></div>
+      </div>
+
+      <input id="userName" maxlength="25" placeholder="Ismingni yoz...">
+      <button id="startBtn" class="main-btn">TAHLILNI BOSHLASH <span>↗</span></button>
+      <p class="disclaimer">Bu ko‘ngilochar xarakter tahlili. Natija klinik tashxis emas.</p>
+    </section>
+
+    <section id="quiz" class="screen">
+      <div class="quiz-header">
+        <div>
+          <small>ISHTIROKCHI</small>
+          <strong id="participant">MEHMON</strong>
+        </div>
+        <div class="counter" id="counter">01 / 15</div>
+      </div>
+
+      <div class="progress"><div id="progress"></div></div>
+
+      <div class="question-panel">
+        <div class="question-icon" id="questionIcon">◈</div>
+        <div class="eyebrow" id="category">ICHKI DUNYO</div>
+        <h2 id="questionTitle">Savol</h2>
+        <p id="questionText"></p>
+        <div id="options" class="options"></div>
+        <div id="feedback" class="feedback"></div>
+      </div>
+
+      <div class="quiz-bottom">
+        <button id="backBtn" class="back-btn">← ORQAGA</button>
+        <span>JAVOBINGNI DIQQAT BILAN TANLA</span>
+        <button id="nextBtn" class="main-btn" disabled>DAVOM ETISH →</button>
+      </div>
+    </section>
+
+    <section id="analyzing" class="screen">
+      <div class="scanner">
+        <div class="scanner-ring"></div>
+        <div class="scanner-core">PL</div>
+      </div>
+      <div class="eyebrow">SHAXSIYATING TAHLIL QILINMOQDA</div>
+      <h2 id="analysisTitle">FIKRLASH USLUBI O‘RGANILMOQDA...</h2>
+      <div class="analysis-track"><div id="analysisBar"></div></div>
+      <p id="analysisText">Javoblaringiz o‘zaro taqqoslanmoqda...</p>
+    </section>
+
+    <section id="result" class="screen">
+      <div class="eyebrow">TAHLIL YAKUNLANDI</div>
+      <h1>SENING <span>VIRTUAL OBRAZING</span></h1>
+
+      <div class="identity-card">
+        <div class="identity-top">PERSONALITY PROFILE <span>№ <b id="profileNumber">001</b></span></div>
+        <div class="avatar" id="avatar">◈</div>
+        <div class="type-label">SENING XARAKTER TURI</div>
+        <h2 id="typeName">SIRLI STRATEG</h2>
+        <p id="typeDescription"></p>
+        <div class="traits" id="traits"></div>
+      </div>
+
+      <div class="result-grid">
+        <div class="result-card">
+          <span>✦</span>
+          <small>KUCHLI TOMONING</small>
+          <h3 id="strength"></h3>
+          <p id="strengthText"></p>
+        </div>
+        <div class="result-card">
+          <span>◉</span>
+          <small>EHTIYOT BO‘LISH KERAK</small>
+          <h3 id="weakness"></h3>
+          <p id="weaknessText"></p>
+        </div>
+        <div class="result-card">
+          <span>⌁</span>
+          <small>FIKRLASH USLUBING</small>
+          <h3 id="thinking"></h3>
+          <p id="thinkingText"></p>
+        </div>
+        <div class="result-card">
+          <span>✧</span>
+          <small>SENING MAXSUS QOBILIYATING</small>
+          <h3 id="talent"></h3>
+          <p id="talentText"></p>
+        </div>
+      </div>
+
+      <div class="advice-box">
+        <div class="eyebrow">LABORATORIYA TAVSIYASI</div>
+        <p id="advice"></p>
+      </div>
+
+      <div class="result-actions">
+        <button id="copyBtn" class="main-btn">NATIJANI NUSXALASH</button>
+        <button id="restartBtn" class="outline-btn">QAYTA TAHLIL ↻</button>
+      </div>
+
+      <div class="author">LOYIHA MUALLIFI: AKRAMJANOVA JADRA MARATOVNA</div>
+    </section>
+  </main>
+
+  <footer>PERSONALITY LAB <span>◆</span> YOUR MIND. YOUR WORLD.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
